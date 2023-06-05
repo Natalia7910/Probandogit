@@ -23,7 +23,14 @@ ul {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
  }
 
- .menu a {
+ .form-content{
+   border-color: #e90a0a;
+   border: 1px solid #e90a0a;
+   padding: 40px  50px;
+   border-radius: 20px;
+ }
+
+ .menu {
     color: grey;
     letter-spacing: 0.1rem;
     display: block;
@@ -36,7 +43,7 @@ ul {
     color: #e94949;
     padding-left: 1.5rem;
  }
-
+ 
  @media (min-width: 800px){
     
   .nav-main {
@@ -108,4 +115,6 @@ ul {
     display: flex;
     justify-content: center;
  }
+
+
 }

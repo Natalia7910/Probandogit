@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-    <header>
-        <meta charset="UTF-8">
-        <meta http-equiv-"X-UA-Compatible" content="IE-edge">
-        <meta name-"viewport" content="width-device-width, initial-scale-1.0 ">
-        <títle></títle>
-    </header>
-    <head>
-        <body>
-            <div>
-                    <img src="../logoApp.svg" alt="logo">
-                </div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">TheStore</a>
-                    <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="false"
-                    aria-label="Toggle navigation"
-                    >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    <div class="collapse navbar-collapse" id="nabarNav">
-                        <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Car</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#">Login <span class="sr-only">(current)</span></a>
-                    </li>
-                 </ul>
-            </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv-"X-UA-Compatible" content="IE-edge">
+    <meta name-"viewport" content="width-device-width, initial-scale-1.0 ">
+    <títle></títle>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <div>
             <img src="../logoApp.svg" alt="logo">
-        <form method="POST" acción="#">
+        </div>
+        <div class="container">
+            <a href="#">TheStore</a>
+            <ul>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">Search</a>
+                </li>
+
+                <li>
+                    <a href="#">Products</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="container">
+    <form method="POST" acción="#">
+
+        <div class="mb-4">
             <label>Name:</label>
-            <input type="text">        
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+        </div>
+        <div class="mb-4">
             <label>Price:</label>
-            <input type="text">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Price">
+        </div>
+        <div class="mb-4">
             <label>Inventory:</label>
-            <input type="text">
-            <button type="submit">Create Product</button>
-            <button type="reset">Reset</button>
-    
-        </form>
-        </body>
-    </head>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inventory">
+        </div>
+        <button type="submit">Create Product</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</div>
+</body>
+
 </html>
