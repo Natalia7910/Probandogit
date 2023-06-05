@@ -11,31 +11,36 @@
 </head>
 
 <body>
-    
-    <img src="../logoApp.svg" alt="logo">
-    <div class="container">
-        <a href="#">TheStore</a>
-        <div>
-            <ul>
-                
-                <li>
-                    <a href="#">Login</a>
-                </li>
-                <li>
-                    <a href="#">Search</a>
-                </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <img src="../logoApp.svg" alt="logo">
+        <div class="container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">TheStore</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search</a>
+                        </li>
 
-                <li>
-                    <a href="#">Products</a>
-                </li>
-            </ul>
-            </nav>
-            <form method="POST" acción="#">
-                <label>Name:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
-                <button type="submit">Search</button>
-                <button type="reset">Reset</button>
-            </form>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Products</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <form method="POST" acción="#">
+
+        <label>Name:</label>
+        <input type="text" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="button" class="btn btn-outline-dark">Search</button>
+        <button type="reset" class="btn btn-outline-dark">Reset</button>
+    </form>
+
 </body>
 
 </html>
