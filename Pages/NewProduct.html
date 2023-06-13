@@ -8,7 +8,39 @@
     <títle></títle>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="../js/index.js"></script>
+    <script>
+        function validateForm() {
+            var nameInput = document.getElementById("nameInput");
+            var priceInput = document.getElementById("priceInput");
+            var inventoryInput = document.getElementById("inventoryInput");
+
+            var nameError = document.getElementById("nameError");
+            var priceError = document.getElementById("priceError");
+            var inventoryError = document.getElementById("inventoryError");
+
+            if (nameInput.value === "") {
+                nameError.innerText = "Campo requerido";
+            } else {
+                nameError.innerText = "";
+            }
+
+            if (priceInput.value === "") {
+                priceError.innerText = "Campo requerido";
+            } else {
+                priceError.innerText = "";
+            }
+
+            if (inventoryInput.value === "") {
+                inventoryError.innerText = "Campo requerido";
+            } else {
+                inventoryError.innerText = "";
+            }
+
+            if (nameInput.value !== "" && priceInput.value !== "" && inventoryInput.value !== "") {
+                alert("¡Producto creado con éxito!");
+            }
+        }
+    </script>
     <style>
 
         body {
